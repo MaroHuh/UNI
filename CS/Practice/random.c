@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /*
-void random()
+void randnum()
 {
     srand(time(NULL));
     int num = rand() % 100 + 1;
@@ -16,20 +17,27 @@ void random()
             printf("Correct! The number was %d\n", num);
             break;
         }
+        else if (num > guess)
+        {
+            printf("Too small.\n");
+            continue;
+        }
         else
         {
 
-            printf("Incorrect.\n");
+            printf("Too big.\n");
             continue;
         }
     }
 }
-*/
+    */
 
 int main()
 {
-    float a = 7.5;
-    int b = 5;
-    int z = sizeof("\n");
-    printf("%d", z);
+    int a = 10;    // 00001010
+    int b = 5;     // 00000101
+    int z = a & b; // 00000000
+    int m = 10 << 1;
+    int n = 10 >> 1;
+    printf("%d", n);
 }

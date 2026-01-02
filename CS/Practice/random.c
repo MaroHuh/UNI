@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-int main()
+/*
+void random()
 {
     srand(time(NULL));
     int num = rand() % 100 + 1;
@@ -23,4 +23,13 @@ int main()
             continue;
         }
     }
+}
+*/
+
+int main()
+{
+    float a = 7.5;
+    int b = 5;
+    int z = sizeof("\n");
+    printf("%d", z);
 }

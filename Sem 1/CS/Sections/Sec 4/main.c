@@ -3,6 +3,7 @@
 
 int main()
 {
+    printf("%d", PLOB);
 
     ///*** Question 1: Check if a Number is Even or Odd using Constant ***///
     // Write a C program that takes an integer input from the user and checks whether it is even or odd.

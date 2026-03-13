@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+// Omar Tarek 20250681
 int main()
 {
     int matrix[3][4] = {

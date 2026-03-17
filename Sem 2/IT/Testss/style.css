@@ -1,0 +1,108 @@
+/* Universal selector */
+*{
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+/* tag/element name selector */
+body{
+font-family: Arial;
+background-color:#f4f4f4;
+}
+
+/* ID selector */
+#header{
+background-color: darkred;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Navigation */
+nav ul{
+list-style:none;
+}
+
+nav ul li{
+display:inline;
+margin:10px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+
+nav ul li a:hover{
+color:yellow;
+}
+
+section{
+padding:30px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* Class selector */
+.section-title{
+color:darkred;
+border-bottom:2px solid gray;
+margin-bottom:20px;
+}
+
+/* Class selector */
+.description{
+font-size:18px;
+margin:20px;
+}
+
+.menu-list{
+background:white;
+padding:20px;
+width:200px;
+}
+
+.menu-list li{
+padding:5px;
+}
+
+.menu-list li:hover{
+color:red;
+cursor:pointer;
+}
+
+table{
+width:60%;
+border-collapse: collapse;
+margin-top:20px;
+}
+
+th,td{
+border:1px solid black;
+padding:10px;
+text-align:center;
+}
+
+th{
+background-color:darkred;
+color:white;
+}
+
+/* Grouping selector */
+input, textarea{
+padding:8px;
+margin-top:5px;
+border:1px solid gray;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+background:black;
+color:white;
+text-align:center;
+}

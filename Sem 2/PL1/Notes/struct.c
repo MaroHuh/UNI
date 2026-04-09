@@ -29,6 +29,7 @@ int main()
 
     // Student firstStudent = {"Omar", 19, 3.4};
     // printf("Name: %s\nAge: %d\nGPA: %.2f", firstStudent.name, firstStudent.age, firstStudent.gpa);
+
     int a = 5;
     int arr[] = {1, 2, 3, 4, 5};
     printf("%d , %d", minimum(arr, a));

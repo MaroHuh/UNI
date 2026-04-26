@@ -1,4 +1,6 @@
 // Omar Tarek 20250681
+
+#include <stdio.h>
 // A
 void swap_nums(int *x, int *y)
 {
@@ -8,12 +10,12 @@ void swap_nums(int *x, int *y)
     *y = tmp; // setting y to x
 }
 
-void swap_pointers(char *x, char *y) // same as swap_nums but with chars
+void swap_pointers(char **x, char **y) // same as swap_nums but with chars
 {
     char *tmp;
-    tmp = x;
-    x = y;
-    y = tmp;
+    tmp = *x;
+    *x = *y;
+    *y = tmp;
 }
 
 int main()
@@ -27,9 +29,9 @@ int main()
     printf("b is %d\n", b); // b is 3
     s1 = "I should print second";
     s2 = "I should print first";
-    swap_pointers(s1, s2);
+    swap_pointers(&s1, &s2);
     printf("s1 is %s\n", s1); // i should print first
-    printf("s2 is %s\n", s2); // i should print ssecond
+    printf("s2 is %s\n", s2); // i should print second
     return 0;
 }
 // B
@@ -43,10 +45,10 @@ int add_two(int x, int y)
 }
 
 /* the main function */
-main()
-{
-    int i, j;
-    for (i = 0, j = 5; i < 5; i++, j--)                                      // i will increase 5 times until 5, j will decrease 5 times until 0
-        printf("the addition of %d and %d is %d.\n\n", i, j, add_two(i, j)); // addition always = 5
-    return 0;
-}
+// main()
+// {
+//     int i, j;
+//     for (i = 0, j = 5; i < 5; i++, j--)                                      // i will increase 5 times until 5, j will decrease 5 times until 0
+//         printf("the addition of %d and %d is %d.\n\n", i, j, add_two(i, j)); // addition always = 5
+//     return 0;
+// }
